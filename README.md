@@ -8,7 +8,8 @@ An Arbiter PUF is a chain of \(k\) multiplexers, each of which either swaps the 
 
 ---
 
-!image
+![image](https://github.com/user-attachments/assets/90890f82-0a64-4120-bffd-787a9f83c9d4)
+
 
 We will create a PUF using multiple arbiter PUFs and call it a Companion Arbiter PUF (CAR-PUF for short). A CAR-PUF uses 2 arbiter PUFs – a working PUF and a reference PUF, as well as a secret threshold value τ > 0. Given a challenge, it is fed into both the working PUF and reference PUF, and the timings for the upper and lower signals for both PUFs are measured. Let Δw and Δr be the differences in timings experienced for the two PUFs on the same challenge. The response to this challenge is 0 if |Δw - Δr| ≤ τ and the response is 1 if |Δw - Δr| > τ, where τ > 0 is the secret threshold value.
 
